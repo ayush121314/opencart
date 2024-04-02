@@ -5,7 +5,7 @@ import { Items } from '../Item/Items'
 export const Popular = () => {
   const [data_product, setpopwom] = useState([]);
   useEffect(()=>{
-    fetch('http://localhost:4000/popularwom')
+    fetch('https://ecom-back-yale.onrender.com/popularwom')
     .then((res)=>res.json())
     .then((data)=>setpopwom(data))
   },[])

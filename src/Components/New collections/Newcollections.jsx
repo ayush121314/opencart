@@ -3,7 +3,7 @@ import { Items } from '../Item/Items'
 export const Newcollections = () => { 
   const [New_collections, setNew_collections] = useState([]);
   useEffect(()=>{
-       fetch('http://localhost:4000/newcollections')
+       fetch('https://ecom-back-yale.onrender.com/newcollections')
        .then((res)=>res.json())
        .then((data)=>setNew_collections(data))
   },[])

@@ -11,7 +11,7 @@ export const LoginSignup = () => {
   });
   async function login() {
     let responsedata;
-    await fetch('http://localhost:4000/login',{
+    await fetch('https://ecom-back-yale.onrender.com/login',{
       method:'POST',
       headers:{
           Accept:'application/json',
@@ -35,7 +35,7 @@ export const LoginSignup = () => {
   
   let responsedata;
  
-    await fetch('http://localhost:4000/signup',{
+    await fetch('https://ecom-back-yale.onrender.com/signup',{
         method:'POST',
         headers:{
             Accept:'application/json',
